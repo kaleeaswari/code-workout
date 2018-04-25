@@ -13,6 +13,10 @@ public class %{class_name}Test extends codeworkout.CodeWorkoutTest
         subject = new %{class_name}();
     }
 
+    public Object remember(Object input) {
+        return input;
+    }
+
     %{tests}
 
 }

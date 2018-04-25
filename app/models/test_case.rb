@@ -382,7 +382,7 @@ PYTHON_TEST
         assertEquals(
           "%{negative_feedback}",
           %{expected_output},
-          subject.%{method_name}(%{input}));
+          remember(subject.%{method_name}(%{input})));
     }
 JAVA_TEST
     }
