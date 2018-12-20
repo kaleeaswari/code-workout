@@ -284,7 +284,7 @@ class Exercise < ActiveRecord::Base
   end
 
   def attempt_data(workout_id = nil)
-    result = exercise_versions.joins{ attempts.prompt_answers }
+    result = exercise_versions.joins(attempts: :prompt_answers)
       .joins('LEFT JOIN workout_scores ON
         workout_scores.id = attempts.workout_score_id')
       .joins('LEFT JOIN workout_offerings ON
