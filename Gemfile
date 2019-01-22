@@ -29,7 +29,7 @@ gem 'loofah'
 gem 'truncate_html'
 gem 'tzinfo' # For timezone support
 gem 'active_record_union'
-gem 'mysql2', '~> 0.3.20'
+gem 'mysql2', '~> 0.4'
 gem 'modernizr-rails'
 gem 'bootsnap' # Added during Rails 5.2 upgrade
 
