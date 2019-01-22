@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '>= 5.0.0.rc2', '< 5.1'
+gem 'rails', '~> 5.1'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -12,7 +12,7 @@ gem 'formtastic-bootstrap'
 gem 'sucker_punch', '~> 1.0'
 gem 'haml', '>= 3.1.4'
 gem 'haml-rails'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2'
 gem 'coffee-script-source'
 gem 'test-unit', '~> 3.0.9'
 gem 'nokogiri', '1.8.1'
@@ -46,14 +46,11 @@ end
 group :development, :test do
   gem 'thin'
   gem 'byebug'
+  gem 'listen'
   gem 'rspec-rails'
   gem 'annotate'
   gem 'rails-erd', github: 'voormedia/rails-erd'
   gem 'faker'
-  # Needed for debugging support in Aptana Studio.  Disabled, since these
-  # two gems do not support Ruby 2.0 yet :-(.
-  # gem 'ruby-debug-base'
-  # gem 'ruby-debug-ide'
   gem 'pry'
   gem 'request-log-analyzer'
 end
