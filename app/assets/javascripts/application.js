@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require modernizr.min.js
+//= require modernizr
 //= require jquery
 //= require jquery-ui
 //= require jquery_ujs
